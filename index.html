@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DutyExchange Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>DutyExchange</h2>
+
+    <a href="#">Dashboard</a>
+    <a href="#">Clients</a>
+    <a href="#">Sell Scrips</a>
+    <a href="#">Buy Demands</a>
+    <a href="#">Negotiations</a>
+    <a href="#">Transactions</a>
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <div>
+            <h1>Dashboard</h1>
+            <p>Welcome to DutyExchange Management Portal</p>
+        </div>
+
+       <button class="add-client-btn">+ Add Client</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Clients</h3>
+            <p class="number">50</p>
+            <span>Registered importers & exporters</span>
+        </div>
+
+        <div class="card">
+            <h3>Active Scrips</h3>
+            <p class="number">24</p>
+            <span>Available in marketplace</span>
+        </div>
+
+        <div class="card">
+            <h3>Active Negotiations</h3>
+            <p class="number">12</p>
+            <span>Deals currently in progress</span>
+        </div>
+
+        <div class="card">
+            <h3>Transactions</h3>
+            <p class="number">8</p>
+            <span>Completed transactions</span>
+        </div>
+
+    </div>
+
+    <div class="table-container">
+
+        <div class="table-header">
+            <h2>Recent Transactions</h2>
+            <button>View All</button>
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Buyer</th>
+                    <th>Seller</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>TXN-1001</td>
+                    <td>ABC Imports Pvt Ltd</td>
+                    <td>Global Exports Ltd</td>
+                    <td>₹5,00,000</td>
+                    <td><span class="success">Success</span></td>
+                </tr>
+
+                <tr>
+                    <td>TXN-1002</td>
+                    <td>India Traders</td>
+                    <td>Prime Export House</td>
+                    <td>₹8,50,000</td>
+                    <td><span class="processing">Processing</span></td>
+                </tr>
+
+                <tr>
+                    <td>TXN-1003</td>
+                    <td>Metro Imports</td>
+                    <td>National Exports</td>
+                    <td>₹3,25,000</td>
+                    <td><span class="negotiation">Negotiation</span></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
