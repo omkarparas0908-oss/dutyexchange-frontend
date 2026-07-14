@@ -1,5 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+     const menuToggle = document.querySelector(".menu-toggle");
+const mobileSidebar = document.querySelector(".sidebar");
 
+if (menuToggle && mobileSidebar) {
+
+    menuToggle.addEventListener("click", function () {
+
+        mobileSidebar.classList.toggle("menu-open");
+
+    });
+
+}
     // ==========================================
     // SELECT HTML ELEMENTS
     // ==========================================

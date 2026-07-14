@@ -831,4 +831,219 @@ label {
     button:hover {
         transform: none;
     }
+}/* ==========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* SIDEBAR */
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 18px 15px;
+    }
+
+    .sidebar h2 {
+        margin: 0 0 18px 0;
+        text-align: center;
+    }
+
+    .sidebar a {
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 5px;
+    }
+
+    /* MAIN CONTENT */
+
+    .main {
+        margin-left: 0;
+        padding: 18px;
+        width: 100%;
+    }
+
+    /* HEADER */
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 22px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .header button,
+    .add-client-btn,
+    .add-scrip-btn,
+    .add-demand-btn,
+    .add-negotiation-btn {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    /* DASHBOARD CARDS */
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .number {
+        font-size: 28px;
+    }
+
+    /* TABLE CONTAINER */
+
+    .table-container {
+        width: 100%;
+        padding: 16px;
+        overflow-x: auto;
+    }
+
+    .table-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .table-header button {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    /* TABLE */
+
+    table {
+        min-width: 700px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        white-space: nowrap;
+    }
+
+    /* FORM / MODAL */
+
+    #clientFormOverlay > div,
+    #scripFormOverlay > div,
+    #buyDemandFormOverlay > div,
+    #negotiationFormOverlay > div {
+        width: calc(100% - 30px) !important;
+        max-width: 420px !important;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 20px !important;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE DEVICES
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .main {
+        padding: 14px;
+    }
+
+    .sidebar {
+        padding: 15px 12px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 17px;
+    }
+
+    .number {
+        font-size: 25px;
+    }
+
+    .table-container {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+}
+/* ==========================================
+   MOBILE HAMBURGER MENU
+========================================== */
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .mobile-nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-nav-header h2 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+        background: #7c3aed;
+        color: white;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+    /* Hide menu links by default */
+
+    .sidebar a {
+        display: none;
+    }
+
+    /* Show menu when sidebar has menu-open */
+
+    .sidebar.menu-open a {
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+        text-align: left;
+    }
 }
